@@ -69,20 +69,15 @@ Tu entrega deberá incluir:
 ## Ejemplo de Uso
 
 ```jsx
-import React from "react";
-import Card from "./path/to/Card";
+import cardData from "./data/cardData";
+import Card from "./components/Card/Card";
 
 function App() {
   return (
     <div className="App">
-      <Card
-        title="Título de la Card"
-        backgroundImageUrl="./path/to/image.jpg"
-        logoUrl="./path/to/logo.png"
-        location="Ubicación"
-        schedule={{ day: "Lunes a Viernes", hours: "9:00 - 18:00" }}
-        moreInfoLink="https://www.ejemplo.com"
-      />
+      {cardData.map((card) => {
+        return <Card {...card} key={card.id} />;
+      })}
     </div>
   );
 }
