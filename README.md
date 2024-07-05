@@ -28,12 +28,17 @@ Este proyecto consiste en el desarrollo de un componente `Card` para una aplicac
 - El componente debe ser desarrollado utilizando React.
 - Debe ser completamente responsive y adaptarse a diferentes tamaños de pantalla.
 - Deberá aceptar props para personalizar el contenido, incluyendo pero no limitándose a:
-  - Título
-  - Imagen de fondo
-  - Logo
-  - Ubicación
-  - Horario
-  - Enlace para más información
+  - id
+  - banner
+  - logo:
+  - title
+  - ubicación
+  - horario: 
+    - dia 
+    - inicio
+    - fin
+  - labelLink
+  - link
 - Debe seguir las pautas de diseño proporcionadas en los mockups adjuntos.
 - Implementar estados de hover donde sea aplicable, según el diseño.
 - Asegurar la accesibilidad, incluyendo etiquetas ARIA donde sea necesario.
@@ -64,7 +69,9 @@ Tu entrega deberá incluir:
 
 ## Mockups
 
-> Aquí deberías incluir imágenes o enlaces a los mockups de diseño que se deben seguir para el desarrollo del componente.
+> ![Descripción de la imagen](src/assets/view.png)
+
+
 
 ## Ejemplo de Uso
 
