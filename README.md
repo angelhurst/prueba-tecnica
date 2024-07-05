@@ -21,7 +21,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 # Prueba Técnica: Componente Card
 
-Este proyecto consiste en el desarrollo de un componente `Card` para una aplicación web. El objetivo es crear un componente reutilizable que siga las especificaciones de diseño proporcionadas.
+Este proyecto consiste en el desarrollo de un componente `Card` para una aplicación web.
+En la `Card` se debe mostrar el estado (Abierto, cerrado, cierra pronto) que se considera según la hora del navegador.
+Se debe seguir las reglas de horario: - Abierto: si la hora actual es mayor que el inicio del horario. - Cierra pronto: si la hora actual es mayor que el inicio y el menor por '1 hora' que el fin del horario. - Cerrado: si la hora actual es mayor que el fin del horario.
+
+El objetivo es crear un componente reutilizable que siga las especificaciones de diseño proporcionadas.
 
 ## Requisitos
 
@@ -33,31 +37,27 @@ Este proyecto consiste en el desarrollo de un componente `Card` para una aplicac
   - logo:
   - title
   - ubicación
-  - horario: 
-    - dia 
+  - horario:
+    - dia
     - inicio
     - fin
   - labelLink
   - link
 - Debe seguir las pautas de diseño proporcionadas en los mockups adjuntos.
-- Implementar estados de hover donde sea aplicable, según el diseño.
-- Asegurar la accesibilidad, incluyendo etiquetas ARIA donde sea necesario.
+- Implementar estados de horario (Abierto, Cierra pronto, Cerrado) donde sea aplicable, según el diseño.
 
-## Tecnologías Sugeridas
+## Tecnologías
 
 - React para el desarrollo del componente.
 - CSS o Sass para estilos.
-- Jest y React Testing Library para pruebas unitarias.
 
 ## Entrega
 
 Tu entrega deberá incluir:
 
 - Código fuente del componente `Card`.
-- Documentación en el README sobre cómo utilizar el componente.
-- Ejemplos de uso dentro de una aplicación React.
-- Pruebas unitarias que demuestren la funcionalidad y robustez del componente.
-- Capturas de pantalla o un enlace a un despliegue en vivo donde se pueda ver el componente en acción.
+- Ejemplos de uso dentro de una aplicación React App.js .
+- Superar la prueba unitaria que demuestren la funcionalidad y robustez del componente.
 
 ## Criterios de Evaluación
 
@@ -65,13 +65,10 @@ Tu entrega deberá incluir:
 - **Funcionalidad**: El componente debe funcionar según lo especificado y ser libre de errores.
 - **Diseño y UX**: El componente debe coincidir con el diseño proporcionado y ofrecer una buena experiencia de usuario.
 - **Responsividad**: El componente debe verse y funcionar bien en una variedad de dispositivos y tamaños de pantalla.
-- **Accesibilidad**: El componente debe ser accesible para usuarios con diferentes capacidades.
 
 ## Mockups
 
-> ![Descripción de la imagen](src/assets/view.png)
-
-
+> ![Descripción de la imagen](src/assets/card.png) > ![Descripción de la imagen](src/assets/status.png) > ![Descripción de la imagen](src/assets/view.png)
 
 ## Ejemplo de Uso
 
