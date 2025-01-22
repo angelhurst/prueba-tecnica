@@ -1,17 +1,15 @@
-
-
-
-
 # Prueba Técnica: Componente Card
 
 Este proyecto consiste en el desarrollo de un componente `Card` para una aplicación web.
 
-En la `Card` se debe mostrar el estado (Abierto, cerrado, cierra pronto) que se considera según la hora del navegador.
+En la `Card` se debe mostrar el estado (Abierto, cerrado, cierra pronto) que se considera según la hora suministrada por la APi https://timeapi.io/ con la zona horaria
+de America/Santiago.
 
-Se debe seguir las reglas de horario: 
-  - **Abierto**: si la hora actual es mayor que el inicio del horario.
-  - **Cierra pronto**: si la hora actual es mayor que el inicio y el menor por '1 hora' que el fin del horario.
-  - **Cerrado**: si la hora actual es mayor que el fin del horario.
+Se debe seguir las reglas de horario:
+
+- **Abierto**: si la hora actual es mayor que el inicio del horario.
+- **Cierra pronto**: si la hora actual es mayor que el inicio y el menor por '1 hora' que el fin del horario.
+- **Cerrado**: si la hora actual es mayor que el fin del horario.
 
 El objetivo es crear un componente reutilizable que siga las especificaciones de diseño proporcionadas.
 
@@ -64,12 +62,15 @@ Tu entrega deberá incluir:
 ## Mockups
 
 ### Card
+
 > ![Descripción de la imagen](src/assets/card.png)
 
 ### Estados de Horarios
+
 > ![Descripción de la imagen](src/assets/status.png)
 
 ### Conjunto de Card segun informacion en `./data/cardData.js`
+
 > ![Descripción de la imagen](src/assets/view.png)
 
 ## Scripts Disponibles
